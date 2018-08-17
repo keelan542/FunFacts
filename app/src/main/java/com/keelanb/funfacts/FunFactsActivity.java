@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FunFactsActivity extends AppCompatActivity {
     private FactBook factBook = new FactBook();
@@ -39,5 +40,7 @@ public class FunFactsActivity extends AppCompatActivity {
         };
 
         showFactButton.setOnClickListener(listener);
+
+        Toast.makeText(this, "Yay! Our Activity was created!", Toast.LENGTH_SHORT).show();
     }
 }
